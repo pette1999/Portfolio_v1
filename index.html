@@ -9,36 +9,77 @@
     <title>Aaron</title>
     <style>
       h1 {
-        color: aqua
+        color: black
       }
     </style>
   </head>
   <!-- Where what is displayed foes-->
-  <body>
+  <body bgcolor="white">
     <header>
-      <h1>Hello Aaron</h1>
       <nav>
-        <a href="about.html">
-          <li>About</li>
-        </a>
+        <div class="navbar">
+          <a href="#home"><img alt="P" src="P.png" width=20 height=30>&nbsp&nbsp&nbsp</a>
+          <a href="#work">Work&nbsp</a>
+          <a href="#about">About&nbsp</a>
+          <a href="#contact">Contact&nbsp</a>
+        </div>
       </nav>
     </header>
-    <h6>This is a smaller heading</h6>
-    <p>Paragraph content</p>
-    <a href="about.html">About</a>
-    <a href="#important-section">Another Section</a>
-    <p id="important-section">This is an important section</p>
+    <main>
+      <img id="home" alt="P" src="home.png" width="100%" height="100%">
+      <div class = "divider"></div>
+      <div>
+        <h1 id="work"><big>My Projects</big></h1>
+        
+        <section class="container">
+          <div class="card">
+            <div>
+              <h1 style="color:#5f8ba5">Company Domain finer</h1>
+              <p>This company domain finder project allows the user to input the url link for a company's LinkedIn profile. The
+                user will get a url link which is directed to the company's domain. The ultimate goal for the project is to help
+                the user to find a company's domain.</p>
+            </div>
+            <a href="https://github.com/pette1999/Find_domain_tool">Learn More</a>
+          </div>
+          <div class="card">
+            <div>
+              <h1 style="color:#5f8ba5">Coronavirus Checker</h1>
+              <p>The pusrpose of this project is to provide the real time data for the Corona Virus using React and API data
+                online. The project allows the user to choose the country or region among the world and provide a interactive
+                graph showing the virus trend in the region. By default, the project would show the global infected, recovered,
+                and death data. </p>
+            </div>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="card">
+            <div>
+              <h1 style="color:#5f8ba5">Image Inpainting</h1>
+              <p>The Image Inpainting program takes a broken image as the input and outputs a fixed image. The tool would be
+                best used to fix old images with relatively less pixel. For high quality photos, the output may not be as
+                desired as the low quality image. </p>
+            </div>
+            <a href="#">Learn More</a>
+          </div>
+        </section>
+      </div>
+      <div class="divider"></div>
+      <div>
+        <h1 id="about"><big>About Me</big></h1>
 
-    <img src="" alt="image" title="image"/>
-
-    <ul>
-      <li>Captain America</li>
-      <li>Thor</li>
-      <li>Captain Marvel</li>
-    </ul>
-    <ol>
-      <li>Iron Man I</li>
-      <li>Avengers End War</li>
-    </ol>
+        <h2>I'm a Chapman Student, major in Computer Science.</h2>
+        <h2>I love EASY life style and would love to make the world EASIER as well</h2>
+        <h2>With the help of technology and programing.</h2>
+        
+        <button class="btn"><a href="resume.pdf">Show Resume</a></button>
+      </div>
+      <div class="divider"></div>
+      <div id="contact">
+        <h1>Hit me up for future projects!</h1>
+        <h2><a style = "color: #6f97ae;" href="mailto: haichen@chapman.edu">haichen@chapman.edu</a></h2>
+      </div>
+    </main>
+    <footer>
+      <p>© 2021 Haifan(Peter) Chen. ALL RIGHTS RESERVED.</p>
+    </footer>
   </body>
 </html>
